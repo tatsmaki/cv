@@ -1,0 +1,64 @@
+@import './colors.scss';
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+  box-sizing: border-box;
+  padding-top: 10vh;
+  background: rgb(238, 231, 231);
+
+  .skills-info {
+    width: 40vw;
+
+    .skills-title {
+      display: block;
+      border-bottom: 1px black solid;
+    }
+
+    .skills-wrap {
+      display: flex;
+      flex-wrap: wrap;
+
+      .skill-item {
+        box-sizing: border-box;
+        margin: 0.5vw;
+        padding: 1vw;
+      }
+
+      .good {
+        background: $green_active;
+      }
+
+      .ok {
+        background: $yellow;
+      }
+
+      .bad {
+        background: $red;
+      }
+    }
+  }
+
+  .lang-info {
+    width: 40vw;
+
+    .lang-title {
+      display: block;
+      border-bottom: 1px black solid;
+    }
+
+    .lang-wrap {
+      .lang-item {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin: 0.5vw;
+        padding: 1vw;
+      }
+    }
+  }
+}

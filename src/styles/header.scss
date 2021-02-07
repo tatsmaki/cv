@@ -1,0 +1,42 @@
+@import './colors.scss';
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+
+  .header-btn {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    background: $blue_disabled;
+    font-size: 1.5vw;
+  }
+
+  .header-btn:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  @keyframes background_color {
+    0% {
+      background: $blue_disabled;
+    }
+    100% {
+      background: $blue_active;
+    }
+  }
+
+  .current {
+    background: $blue_active;
+    animation-name: background_color;
+    animation-duration: 1s;
+  }
+}

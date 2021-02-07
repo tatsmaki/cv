@@ -1,0 +1,84 @@
+.about-me {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  padding-top: 10vh;
+
+  .about-header {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+
+    .info-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      .about-links {
+        display: flex;
+        justify-content: space-between;
+        width: 60vw;
+
+        .about-link {
+        }
+      }
+    }
+
+    .me {
+      width: 15vw;
+      height: 15vw;
+      background: url(../assets/me.jpg);
+      background-position: center;
+      background-size: 100%;
+      border-radius: 50%;
+    }
+  }
+  .my-life {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+
+    .donut {
+      width: 20vw;
+      height: 20vw;
+    }
+
+    .text-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 60vh;
+
+      .experience {
+        width: 45vw;
+
+        .exp-title {
+          display: block;
+          border-bottom: 1px black solid;
+        }
+
+        .exp-line {
+          .exp-info {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+
+      .education {
+        .edu-title {
+          display: block;
+          border-bottom: 1px black solid;
+        }
+        .edu-info {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
