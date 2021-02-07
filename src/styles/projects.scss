@@ -1,0 +1,86 @@
+@import './colors.scss';
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  padding-top: 10vh;
+  overflow-x: scroll;
+
+  .projects-wrapper {
+    display: flex;
+
+    .project {
+      display: flex;
+      width: 90vw;
+      height: 60vh;
+      margin-left: 5vw;
+      margin-right: 5vw;
+      box-shadow: 0 0 1vw $green_active;
+
+      .image,
+      .info {
+        width: 50%;
+        height: 100%;
+
+        .title {
+          font-size: 2vw;
+        }
+        .text {
+          width: 80%;
+          font-size: 1.6vw;
+
+          .text-link {
+            color: $blue_active;
+          }
+        }
+        .links {
+          display: flex;
+          justify-content: space-between;
+          width: 70%;
+
+          .link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40%;
+            height: 6vh;
+            text-decoration: none;
+            color: white;
+            background: $green_disabled;
+          }
+          .link:hover {
+            cursor: pointer;
+            background: $green_active;
+          }
+        }
+      }
+      .image.minecraft {
+        background: url(../assets/minecraft.jpg) no-repeat;
+        background-size: 200%;
+        background-position: center;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.projects::-webkit-scrollbar {
+  width: 2vh;
+}
+.projects::-webkit-scrollbar-thumb {
+  background: $blue_disabled;
+}
+.projects::-webkit-scrollbar-thumb:hover {
+  background: $blue_active;
+}

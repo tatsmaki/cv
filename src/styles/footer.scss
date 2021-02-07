@@ -1,0 +1,15 @@
+@import './colors.scss';
+
+.contacts {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  background: $green_disabled;
+
+  .footer-item {
+    font-size: 1.5vw;
+    color: $blue_active;
+  }
+}
