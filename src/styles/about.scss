@@ -1,7 +1,9 @@
+@import './colors.scss';
+
 .about-me {
   display: flex;
   flex-direction: column;
-  // justify-content: space-evenly;
+  justify-content: space-evenly;
   align-items: center;
   width: 100vw;
   height: 100vh;
@@ -17,13 +19,41 @@
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
+      width: 70vw;
+
+      .name {
+        font-family: 'Roboto', sans-serif;
+        font-size: 3vw;
+      }
+
+      .job {
+        font-family: 'Roboto', sans-serif;
+        font-size: 2vw;
+      }
 
       .about-links {
         display: flex;
         justify-content: space-between;
-        width: 60vw;
 
         .about-link {
+          display: flex;
+          align-items: center;
+          font-family: 'Roboto', sans-serif;
+          color: black;
+          text-decoration: none;
+
+          .material-icons {
+            margin-right: 1vw;
+          }
+
+          .github {
+            display: block;
+            width: 2vw;
+            height: 2vw;
+            margin-right: 1vw;
+            background: url(../assets/github.svg);
+            background-size: 100%;
+          }
         }
       }
     }
@@ -54,29 +84,99 @@
       height: 60vh;
 
       .experience {
-        width: 45vw;
+        width: 48vw;
 
         .exp-title {
           display: block;
           border-bottom: 1px black solid;
+          font-family: 'Roboto', sans-serif;
+          font-size: 1.8vw;
+          margin-bottom: 2vh;
         }
 
         .exp-line {
+          .job {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.4vw;
+          }
+
           .exp-info {
             display: flex;
             justify-content: space-between;
+            font-family: 'Roboto', sans-serif;
+
+            .group {
+              font-size: 1.6vw;
+            }
+
+            .exp-item {
+              display: flex;
+              align-items: center;
+              margin-top: 0.5vh;
+              margin-bottom: 0.5vh;
+
+              .material-icons {
+                margin-right: 1vw;
+              }
+            }
+          }
+
+          .exp-ul {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            padding-left: 2vw;
+
+            .exp-li {
+              font-family: 'Roboto', sans-serif;
+            }
           }
         }
       }
 
       .education {
+        width: 48vw;
+
         .edu-title {
           display: block;
           border-bottom: 1px black solid;
+          font-family: 'Roboto', sans-serif;
+          font-size: 1.8vw;
+          margin-bottom: 2vh;
         }
-        .edu-info {
-          display: flex;
-          justify-content: space-between;
+
+        .edu-line {
+          .edu {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.4vw;
+          }
+
+          .edu-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 0.5vh;
+            margin-bottom: 0.5vh;
+            font-family: 'Roboto', sans-serif;
+
+            .university {
+              font-size: 1.6vw;
+              margin-bottom: 0.5vh;
+            }
+
+            .years {
+              margin-left: 17.5vw;
+            }
+
+            .edu-info-item {
+              display: flex;
+              align-items: center;
+
+              .material-icons {
+                margin-right: 1vw;
+              }
+            }
+          }
         }
       }
     }

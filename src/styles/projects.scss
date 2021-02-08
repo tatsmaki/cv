@@ -12,13 +12,13 @@
   padding-top: 10vh;
   overflow-x: scroll;
 
-  .projects-wrapper {
+  .projects-wrap {
     display: flex;
 
     .project {
       display: flex;
       width: 90vw;
-      height: 60vh;
+      height: 70vh;
       margin-left: 5vw;
       margin-right: 5vw;
       box-shadow: 0 0 1vw $green_active;
@@ -29,11 +29,15 @@
         height: 100%;
 
         .title {
+          font-family: 'Roboto', sans-serif;
           font-size: 2vw;
         }
+
         .text {
           width: 80%;
+          font-family: 'Roboto', sans-serif;
           font-size: 1.6vw;
+          text-align: justify;
 
           .text-link {
             color: $blue_active;
@@ -50,21 +54,43 @@
             justify-content: center;
             width: 40%;
             height: 6vh;
+            background: $green_disabled;
+            font-family: 'Roboto', sans-serif;
             text-decoration: none;
             color: white;
-            background: $green_disabled;
           }
+
           .link:hover {
             cursor: pointer;
             background: $green_active;
           }
         }
       }
+
       .image.minecraft {
         background: url(../assets/minecraft.jpg) no-repeat;
         background-size: 200%;
         background-position: center;
       }
+
+      .image.covid {
+        background: url(../assets/covid.jpg) no-repeat;
+        background-size: 200%;
+        background-position: center;
+      }
+
+      .image.selectors {
+        background: url(../assets/selectors.jpg) no-repeat;
+        background-size: 200%;
+        background-position: left;
+      }
+
+      .image.puzzle {
+        background: url(../assets/puzzle.jpg) no-repeat;
+        background-size: 200%;
+        background-position: center;
+      }
+
       .info {
         display: flex;
         flex-direction: column;
@@ -78,9 +104,11 @@
 .projects::-webkit-scrollbar {
   width: 2vh;
 }
+
 .projects::-webkit-scrollbar-thumb {
   background: $blue_disabled;
 }
+
 .projects::-webkit-scrollbar-thumb:hover {
   background: $blue_active;
 }
