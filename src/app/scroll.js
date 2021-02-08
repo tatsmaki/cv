@@ -1,9 +1,7 @@
-import htmlData from "./htmlData";
-
 const SCREEN_COUNT = 2;
 const SCROLL_SPEED = 30;
 const MIN_MOVEMENT_X = 1;
-const PROJECTS_COUNT = 2;
+const PROJECTS_COUNT = 3;
 const MOVE_SPEED = 2;
 
 class Scroll {
@@ -15,47 +13,12 @@ class Scroll {
     this.projectsScroll = 0;
   }
 
-  createPage() {
-    this.app = document.createElement('div');
-    this.header = document.createElement('header');
-    this.aboutMeBtn = document.createElement('button');
-    this.skillsBtn = document.createElement('button');
-    this.projectsBtn = document.createElement('button');
-    this.aboutMe = document.createElement('section');
-    this.skills = document.createElement('section');
-    this.projects = document.createElement('section');
-    this.projectsWrapper = document.createElement('div');
-    this.minecraftProject = document.createElement('div');
-    this.footer = document.createElement('footer');
-
-    this.app.classList.add('cv-page');
-    this.header.classList.add('header');
-    this.aboutMeBtn.classList.add('header-btn', 'current');
-    this.skillsBtn.classList.add('header-btn');
-    this.projectsBtn.classList.add('header-btn');
-    this.aboutMeBtn.id = 'top';
-    this.projectsBtn.id = 'middle';
-    this.skillsBtn.id = 'bottom';
-    this.aboutMe.classList.add('about-me');
-    this.skills.classList.add('skills');
-    this.projects.classList.add('projects');
-    this.projectsWrapper.classList.add('projects-wrapper');
-    this.minecraftProject.classList.add('project');
-    this.footer.classList.add('contacts');
-
-    this.aboutMeBtn.textContent = 'About me';
-    this.projectsBtn.textContent = 'My Projects';
-    this.skillsBtn.textContent = 'Skills';
-    this.aboutMe.innerHTML = htmlData.about;
-    this.minecraftProject.innerHTML = htmlData.minecraft;
-    this.skills.innerHTML = htmlData.skills;
-    this.footer.innerHTML = htmlData.contacts;
-
-    this.header.append(this.aboutMeBtn, this.projectsBtn, this.skillsBtn);
-    this.projects.append(this.projectsWrapper);
-    this.projectsWrapper.append(this.minecraftProject);
-    this.app.append(this.header, this.aboutMe, this.projects, this.skills, this.footer);
-    document.body.append(this.app);
+  getPage() {
+    this.app = document.getElementById('cv-page-app');
+    this.aboutMeBtn = document.getElementById('top');
+    this.projectsBtn = document.getElementById('middle');
+    this.skillsBtn = document.getElementById('bottom');
+    this.projects = document.getElementById('projects-scroll');
   }
 
   controlPage() {
