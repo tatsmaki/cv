@@ -39,11 +39,13 @@
           display: flex;
           align-items: center;
           font-family: 'Roboto', sans-serif;
+          font-size: 1.6vw;
           color: black;
           text-decoration: none;
 
           .material-icons {
             margin-right: 1vw;
+            font-size: 2vw;
           }
 
           .github {
@@ -72,16 +74,32 @@
     justify-content: space-between;
     width: 90vw;
 
-    .donut {
-      width: 20vw;
-      height: 20vw;
+    .summary {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 30vw;
+      height: 50vh;
+
+      .summary-title {
+        display: block;
+        margin-bottom: 1vh;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.8vw;
+        border-bottom: 1px black solid;
+      }
+
+      .text {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.6vw;
+      }
     }
 
     .text-info {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      height: 60vh;
+      height: 50vh;
 
       .experience {
         width: 48vw;
@@ -105,18 +123,16 @@
             justify-content: space-between;
             font-family: 'Roboto', sans-serif;
 
-            .group {
-              font-size: 1.6vw;
-            }
-
             .exp-item {
               display: flex;
               align-items: center;
               margin-top: 0.5vh;
               margin-bottom: 0.5vh;
+              font-size: 1.6vw;
 
               .material-icons {
                 margin-right: 1vw;
+                font-size: 1.6vw;
               }
             }
           }
@@ -129,6 +145,7 @@
 
             .exp-li {
               font-family: 'Roboto', sans-serif;
+              font-size: 1.6vw;
             }
           }
         }
@@ -160,7 +177,6 @@
             font-family: 'Roboto', sans-serif;
 
             .university {
-              font-size: 1.6vw;
               margin-bottom: 0.5vh;
             }
 
@@ -171,9 +187,11 @@
             .edu-info-item {
               display: flex;
               align-items: center;
+              font-size: 1.6vw;
 
               .material-icons {
                 margin-right: 1vw;
+                font-size: 1.6vw;
               }
             }
           }
