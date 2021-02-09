@@ -15,18 +15,31 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1vw;
 
+    @media (max-width: 1200px) {
+      width: 90vw;
+      font-size: 3vw;
+    }
+
     .skills-title {
       display: block;
       border-bottom: 1px black solid;
       font-family: 'Roboto', sans-serif;
       font-size: 1.8vw;
       margin-bottom: 1vh;
+
+      @media (max-width: 1200px) {
+        font-size: 4vw;
+      }
     }
 
     .title {
       display: block;
       border-bottom: 1px rgba(105, 104, 104, 0.534) solid;
       color: rgb(105, 104, 104);
+
+      @media (max-width: 1200px) {
+        font-size: 2.6vw;
+      }
     }
 
     .skills-wrap {
@@ -56,12 +69,20 @@
   .lang-info {
     width: 40vw;
 
+    @media (max-width: 1200px) {
+      width: 90vw;
+    }
+
     .lang-title {
       display: block;
       border-bottom: 1px black solid;
       font-family: 'Roboto', sans-serif;
       font-size: 1.8vw;
       margin-bottom: 1vh;
+
+      @media (max-width: 1200px) {
+        font-size: 4vw;
+      }
     }
 
     .lang-wrap {
@@ -75,6 +96,10 @@
         font-size: 1vw;
         background: rgba(128, 128, 128, 0.233);
         border-bottom: 3px rgba(65, 63, 63, 0.288) solid;
+
+        @media (max-width: 1200px) {
+          font-size: 3vw;
+        }
       }
     }
   }

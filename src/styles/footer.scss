@@ -16,6 +16,10 @@
     color: white;
     text-decoration: none;
 
+    @media (max-width: 1024px) {
+      font-size: 3vw;
+    }
+
     .footer-icon {
       display: block;
       width: 3vw;
