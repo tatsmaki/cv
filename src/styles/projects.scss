@@ -21,7 +21,7 @@
       height: 70vh;
       margin-left: 5vw;
       margin-right: 5vw;
-      box-shadow: 0 0 1vw $green_active;
+      box-shadow: 0 0 2vw rgba(109, 107, 107, 0.589);
 
       .image,
       .info {
@@ -36,7 +36,7 @@
         .text {
           width: 80%;
           font-family: 'Roboto', sans-serif;
-          font-size: 1.6vw;
+          font-size: 1.4vw;
           text-align: justify;
 
           .text-link {
@@ -54,7 +54,7 @@
             justify-content: center;
             width: 40%;
             height: 6vh;
-            background: $green_disabled;
+            background: $blue_disabled;
             font-family: 'Roboto', sans-serif;
             text-decoration: none;
             color: white;
@@ -62,7 +62,7 @@
 
           .link:hover {
             cursor: pointer;
-            background: $green_active;
+            background: $blue_active;
           }
         }
       }

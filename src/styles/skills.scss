@@ -9,14 +9,24 @@
   height: 90vh;
   box-sizing: border-box;
   padding-top: 10vh;
-  background: rgb(238, 231, 231);
 
   .skills-info {
     width: 40vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
 
     .skills-title {
       display: block;
       border-bottom: 1px black solid;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.8vw;
+      margin-bottom: 1vh;
+    }
+
+    .title {
+      display: block;
+      border-bottom: 1px rgba(105, 104, 104, 0.534) solid;
+      color: rgb(105, 104, 104);
     }
 
     .skills-wrap {
@@ -26,11 +36,11 @@
       .skill-item {
         box-sizing: border-box;
         margin: 0.5vw;
-        padding: 1vw;
+        padding: 0.5vw;
       }
 
       .good {
-        background: $green_active;
+        background: $green_disabled;
       }
 
       .ok {
@@ -49,6 +59,9 @@
     .lang-title {
       display: block;
       border-bottom: 1px black solid;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.8vw;
+      margin-bottom: 1vh;
     }
 
     .lang-wrap {
@@ -58,6 +71,10 @@
         box-sizing: border-box;
         margin: 0.5vw;
         padding: 1vw;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1vw;
+        background: rgba(128, 128, 128, 0.233);
+        border-bottom: 3px rgba(65, 63, 63, 0.288) solid;
       }
     }
   }
